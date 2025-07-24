@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0077ff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --accent-color: #66ccff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+button#toggle-theme {
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button#toggle-theme:hover {
+  transform: scale(1.05);
+}
